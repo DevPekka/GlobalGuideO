@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5595fc</color>
+    <color name="colorPrimaryDark">#447fdd</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/cardview_dark_background</item>
+    </style>
+</resources>
