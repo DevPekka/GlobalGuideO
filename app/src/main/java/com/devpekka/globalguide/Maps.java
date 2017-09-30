@@ -9,7 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class Maps extends AppCompatActivity {
-    String items[] = new String[] {"Austria", "Aztec", "Shipped"};
+    String items[] = new String[] {"Austria", "Aztec", "Agency", "Shipped"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,10 @@ public class Maps extends AppCompatActivity {
                     startActivity(aztec);
                 }
                 if(position==2){
+                    Intent agency = new Intent(Maps.this,Agency.class);
+                    startActivity(agency);
+                }
+                if(position==3){
                     Intent shipped = new Intent(Maps.this,Shipped.class);
                     startActivity(shipped);
                 }

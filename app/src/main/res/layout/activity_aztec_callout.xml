@@ -18,7 +18,7 @@
         android:adjustViewBounds="true"
         android:cropToPadding="true"
         android:scaleType="fitXY"
-        android:src="@drawable/aztec_callout"
+        android:src="@drawable/aztec_calout"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp" />
 

@@ -1,17 +1,14 @@
 package com.devpekka.globalguide;
 
-import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.Button;
+import android.os.Bundle;
 import android.widget.ExpandableListView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class aztec extends AppCompatActivity {
+public class Agency extends AppCompatActivity {
     private ExpandableListView listView;
     private ExpandableListAdapter listAdapter;
     private List<String> listDataHeader;
@@ -20,25 +17,21 @@ public class aztec extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_aztec);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Aztec");
-        getSupportActionBar().setIcon(R.mipmap.t_launcher);
+        setContentView(R.layout.activity_agency);
 
-        //Creator ListView
-        listView = (ExpandableListView)findViewById(R.id.lvExp);
+        listView = (ExpandableListView)findViewById(R.id.creator);
         initData();
         listAdapter = new ExpandableListAdapter(this, listDataHeader, listHash);
         listView.setAdapter(listAdapter);
 
         //Costum ListView
-        listView = (ExpandableListView)findViewById(R.id.costum);
+        listView = (ExpandableListView)findViewById(R.id.costumAgency);
         initData2();
         listAdapter = new ExpandableListAdapter(this, listDataHeader, listHash);
         listView.setAdapter(listAdapter);
 
-        configureCall();
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Agency");
     }
 
     private void initData2() {
@@ -48,8 +41,8 @@ public class aztec extends AppCompatActivity {
         listDataHeader.add("Costum");
 
         List<String> creator = new ArrayList<>();
-        creator.add("CT : Seal Team 6");
-        creator.add("T  : Phoenix Connection");
+        creator.add("CT : FBI");
+        creator.add("T   : Professional");
 
         listHash.put(listDataHeader.get(0), creator);
     }
@@ -61,20 +54,10 @@ public class aztec extends AppCompatActivity {
         listDataHeader.add("Creator");
 
         List<String> creator = new ArrayList<>();
-        creator.add("Chris Auty");
-        creator.add("Valve Corporation");
-        creator.add("Hidden Path Entertainment");
+        creator.add("Puddy");
+        creator.add("Rick");
 
         listHash.put(listDataHeader.get(0), creator);
-    }
 
-    public void configureCall(){
-        Button btn = (Button) findViewById(R.id.callout1);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(aztec.this, AztecCallout.class));
-            }
-        });
     }
 }

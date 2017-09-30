@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.devpekka.globalguide.Shipped">
+    tools:context="com.devpekka.globalguide.Agency">
 
     <android.support.v7.widget.CardView
         style="?attr/selectableItemBackground"
@@ -22,35 +23,16 @@
             android:weightSum="1">
 
             <ImageView
-                android:id="@+id/shipped"
+                android:id="@+id/agency"
                 android:layout_width="match_parent"
                 android:layout_height="122dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/shipped" />
+                android:src="@drawable/agency" />
 
-            <TextView
+            <ExpandableListView
+                android:id="@+id/creator"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="9dp"
-                android:fontFamily="sans-serif"
-                android:paddingLeft="9dp"
-                android:text="Creator:"
-                android:textAlignment="viewStart"
-                android:textAllCaps="false"
-                android:textColor="@android:color/black"
-                android:textSize="15sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="9dp"
-                android:fontFamily="sans-serif"
-                android:paddingLeft="9dp"
-                android:text="catFood"
-                android:textAlignment="viewStart"
-                android:textAllCaps="false"
-                android:textColor="@android:color/holo_orange_dark"
-                android:textSize="13sp" />
+                android:layout_height="wrap_content"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -94,27 +76,15 @@
                 android:layout_marginTop="5dp"
                 android:fontFamily="sans-serif"
                 android:paddingLeft="9dp"
-                android:text="Bomb Defusal"
+                android:text="Hostage rescue"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/holo_green_dark"
                 android:textSize="13sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:fontFamily="sans-serif"
-                android:paddingLeft="9dp"
-                android:text="Costum: SAS, T Pirate"
-                android:textAlignment="viewStart"
-                android:textAllCaps="false"
-                android:textColor="@android:color/black"
-                android:textSize="15sp" />
-
             <ExpandableListView
                 android:layout_marginTop="5sp"
-                android:id="@+id/costumShipped"
+                android:id="@+id/costumAgency"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
@@ -125,7 +95,7 @@
                 android:layout_marginBottom="9dp"
                 android:fontFamily="sans-serif"
                 android:paddingLeft="9dp"
-                android:text="Entity: de_shipped"
+                android:text="Entity: cs_agency"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/black"

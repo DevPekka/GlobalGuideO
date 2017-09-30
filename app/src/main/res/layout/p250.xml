@@ -1,0 +1,198 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7sp"
+    android:orientation="vertical"
+    android:background="#e3ecf9"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.devpekka.globalguide.KindOfPistol">
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="6sp"
+        app:cardElevation="6sp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_width="match_parent"
+        android:layout_height="135dp">
+        <RelativeLayout
+            android:padding="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="P250"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#52565b"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:typeface="normal"/>
+
+            <ImageView
+                android:layout_width="114sp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/p250"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="10sp"
+        app:cardCornerRadius="1dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardElevation="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:padding="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Gun Info"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                />
+
+            <ImageView
+                android:src="@drawable/ic_info_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView5"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:padding="10sp"
+            android:text="Origin:"
+            android:textColor="#52565b"
+            android:textSize="17sp"
+            android:textStyle="normal"/>
+        <TextView
+            android:textColor="#52565b"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/textView3"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:layout_weight="0.1"
+            android:textAlignment="textEnd"
+            android:text="SWITZERLAND GERMANY"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tx5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:text="Price:"
+            android:textColor="#52565b"
+            android:textSize="17sp"
+            android:padding="10sp"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:textColor="#52565b"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/tx3"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:layout_weight="0.1"
+            android:textAlignment="textEnd"
+            android:text="$300"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:text="Reload Time:"
+            android:textColor="#52565b"
+            android:textSize="17sp"
+            android:padding="10sp"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:textColor="#52565b"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:layout_weight="0.1"
+            android:textAlignment="textEnd"
+            android:text="2.2 Seconds"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:text="Kill Reward:"
+            android:textColor="#52565b"
+            android:textSize="17sp"
+            android:padding="10sp"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:textColor="#52565b"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="0.17"
+            android:textAlignment="textEnd"
+            android:text="$150 (Casual) $300 (Competitive)"/>
+
+    </LinearLayout>
+
+</LinearLayout>

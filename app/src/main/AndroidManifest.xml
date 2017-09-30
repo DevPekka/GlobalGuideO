@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.devpekka.globalguide">
+          package="com.devpekka.globalguide">
 
-    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -17,9 +17,9 @@
             android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
@@ -27,7 +27,7 @@
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".MainActivity"/>
         </activity>
         <activity
             android:name=".aztec"
@@ -41,33 +41,44 @@
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".aztec" />
+                android:value=".aztec"/>
         </activity>
         <activity
             android:name=".Austria"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Maps" />
+                android:value=".Maps"/>
         </activity>
         <activity
             android:name=".Shipped"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Maps" />
-        </activity>
-        <activity android:name=".Guns" android:screenOrientation="portrait">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".Maps"/>
         </activity>
         <activity
-            android:name=".Pistol"
+            android:name=".Guns"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Guns" />
+                android:value=".MainActivity"/>
+        </activity>
+        <activity android:name=".Agency">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Maps">
+            </meta-data>
+        </activity>
+        <activity
+            android:name=".KindOfPistol"
+            android:label="@string/title_activity_kind_of_pistol"
+            android:parentActivityName=".Guns"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.devpekka.globalguide.Guns"/>
         </activity>
     </application>
 

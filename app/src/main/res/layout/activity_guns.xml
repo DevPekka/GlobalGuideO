@@ -7,7 +7,6 @@
     tools:context="com.devpekka.globalguide.Guns">
 
     <ListView
-        android:padding="20sp"
         android:id="@+id/gunsList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

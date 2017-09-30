@@ -10,7 +10,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 public class Guns extends AppCompatActivity {
-    String items[] = new String[] {"Pistol", "Heavy", "SMG", "RIFLES"};
+    String items[] = new String[] {"Pistol's", "Heavy", "SMG", "RIFLES"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class Guns extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 if(position==0){
-                    Intent intenpolar = new Intent(Guns.this, Pistol.class);
+                    Intent intenpolar = new Intent(Guns.this, KindOfPistol.class);
                     startActivity(intenpolar);
                 }
                 if(position==1){
